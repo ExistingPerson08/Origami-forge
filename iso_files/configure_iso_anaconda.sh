@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -eoux pipefail
 
-# Remove packages to save space
-
+# Force install Firefox and remove Zen to make anaconda work
+dnf remove -y zen-browser
+dnf install -y firefox
 
 # Disable services not needed in live environment
 systemctl disable rpm-ostree-countme.service
