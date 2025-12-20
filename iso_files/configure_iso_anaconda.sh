@@ -5,6 +5,9 @@ set -eoux pipefail
 dnf remove -y zen-browser
 dnf install -y firefox
 
+# Remove uneeded packages to save space
+dnf remove -y oru topgrade
+
 # Disable services not needed in live environment
 systemctl disable rpm-ostree-countme.service
 systemctl disable bootloader-update.service
