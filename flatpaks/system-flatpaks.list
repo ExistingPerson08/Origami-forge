@@ -1,18 +1,11 @@
 # Web browsers
-app/org.mozilla.firefox
-app/org.mozilla.Thunderbird
+# Uncomment when Zen removed from base image
+# app/app.zen_browser.zen
 
-# GNOME apps
-app/org.gnome.Calculator
-app/org.gnome.Calendar
-app/com.ranfdev.DistroShelf
-app/org.gnome.FileRoller
-app/io.missioncenter.MissionCenter
+# COSMIC apps
+app/dev.edfloreshz.Calculator
 
-# Themes
-runtime/org.gtk.Gtk3theme.adw-gtk3
-runtime/org.gtk.Gtk3theme.adw-gtk3-dark
-
-# Development tools
+# System managment
 app/com.github.tchx84.Flatseal
 app/io.github.flattool.Warehouse
+app/dev.edfloreshz.CosmicTweaks
