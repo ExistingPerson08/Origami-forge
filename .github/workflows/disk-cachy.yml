@@ -42,7 +42,7 @@ jobs:
         with:
           image-ref: registry.gitlab.com/origami-linux/images/origami:cachy
           flatpaks-list: ${{ github.workspace }}/flatpaks/system-flatpaks.list
-          hook-post-rootfs: ${{ github.workspace }}/iso_files/configure_iso_anaconda.sh
+          hook-post-rootfs: ${{ github.workspace }}/iso_files/configure_iso_anaconda_cachy.sh
           compression: squashfs
           builder-distro: fedora
 
