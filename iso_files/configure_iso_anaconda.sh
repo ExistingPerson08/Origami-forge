@@ -6,7 +6,7 @@ dnf remove -y zen-browser
 dnf install -y firefox
 
 # Remove uneeded packages to save space
-dnf remove -y oru topgrade
+dnf remove -y oru topgrade distrobox cowsay cmatrix cbonsai tty-clock lazygit fish
 
 # Disable services not needed in live environment
 systemctl disable rpm-ostree-countme.service
